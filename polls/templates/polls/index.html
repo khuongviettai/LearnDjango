@@ -1,0 +1,15 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+    <h1>This is templete</h1>
+    <h2>{{ name }}</h2>
+
+    <ul>
+        {% for item in taisan %}
+            {% if item == 'Laptop' %}
+                <li>{{ item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+{% endblock %}
